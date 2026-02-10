@@ -1,0 +1,55 @@
+body {
+  background: #f6c1d1;
+  font-family: "Arial", sans-serif;
+}
+
+.card {
+  background: white;
+  width: 60%;
+  max-width: fit-content;
+  padding: 30px 40px;
+  border-radius: 16px;
+  text-align: center;
+  margin: 80px auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.emoji {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-bottom: 25px;
+}
+
+.buttons {
+  position: relative;
+  height: 80px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 25px;
+  padding: 12px 26px;
+}
+
+.yes {
+  background: #e91e63;
+  color: white;
+  margin-right: 20px;
+}
+
+.no {
+  background: #ffb6c1;
+  color: #333;
+  position: absolute;
+}
+
+.hint {
+  display: block;
+  margin-top: 20px;
+  color: #666;
+}
