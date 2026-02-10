@@ -30,6 +30,20 @@ export default function ValentineCard() {
             alt="test"
           />
         </div>
+
+        <p className="text-2xl text-center pb-2">
+          With you I forget my all stress <br />
+          With you I feel my best
+        </p>
+
+        <div className="flex justify-center">
+          <Image
+            src={"/images/akhilesh.jpg"}
+            height={250}
+            width={250}
+            alt="test"
+          />
+        </div>
       </div>
     );
   }
@@ -50,7 +64,12 @@ export default function ValentineCard() {
 
         <button
           className="no"
-          onMouseEnter={moveNoButton}
+          onMouseEnter={moveNoButton} // desktop hover
+          onTouchStart={(e) => {
+            e.preventDefault(); // stop click
+            moveNoButton(); // move away
+          }}
+          onClick={(e) => e.preventDefault()} // extra safety
           style={{
             transform: `translate(${noPosition.left}px, ${noPosition.top}px)`,
           }}
