@@ -37,12 +37,7 @@ export default function ValentineCard() {
         </p>
 
         <div className="flex justify-center">
-          <Image
-            src={"/images/akhilesh.jpg"}
-            height={250}
-            width={250}
-            alt="test"
-          />
+          <Image src={"/images/amit.jpg"} height={250} width={250} alt="test" />
         </div>
       </div>
     );
@@ -51,7 +46,7 @@ export default function ValentineCard() {
   return (
     <div className="card">
       {/* <div className="emoji">❤️</div> */}
-      <h2>🐱 Jasmine will you be my valentine? ❤️</h2>
+      <h2>🐱 Shrreya will you be my valentine? ❤️</h2>
 
       <div className="flex justify-center mb-20">
         <Image src={"/images/love.gif"} height={250} width={250} alt="test" />
